@@ -1,5 +1,8 @@
 mod func;
+mod number;
+
 use func::*;
+use number::*;
 
 pub enum Expr {
     /// An `Operator`
@@ -23,11 +26,4 @@ pub enum Operator {
     Pow,
     /// Negating a number (multiplying by negative 1), typically '-' directly before a number.
     Neg,
-}
-
-pub enum NumLiteral {
-    /// A number that can be exactly represented without a decimal.
-    Integer(i64),
-    /// Any real number.
-    Float(f64),
 }
