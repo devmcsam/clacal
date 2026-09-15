@@ -7,8 +7,8 @@ use number::*;
 pub enum Expr {
     /// An `Operator`
     Operator(Operator),
-    /// A number that is known at parse time
-    NumLiteral(NumLiteral),
+    /// Any real number.
+    Number(Number),
     /// A function that is called
     Function(Function),
 }
