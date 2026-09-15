@@ -1,0 +1,14 @@
+[package]
+name = "clacal"
+version = "0.1.0"
+edition = "2024"
+description = "A performant calculator backend with optional parsing"
+authors = ["Samuel McNally <sammcnally587@gmail.com>"]
+categories = ["mathematics"]
+keywords = ["calculator", "math"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/devmcsam/clacal.git"
+homepage = "https://github.com/devmcsam/clacal.git"
+
+[dependencies]
