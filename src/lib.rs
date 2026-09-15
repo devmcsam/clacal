@@ -1,10 +1,13 @@
+mod func;
+use func::*;
+
 pub enum Expr {
     /// An `Operator`
-    Operator,
+    Operator(Operator),
     /// A number that is known at parse time
-    NumLiteral,
+    NumLiteral(NumLiteral),
     /// A function that is called
-    Function,
+    Function(Function),
 }
 
 pub enum Operator {
@@ -27,11 +30,4 @@ pub enum NumLiteral {
     Integer(i64),
     /// Any real number.
     Float(f64),
-}
-
-pub enum Function {
-    /// A function natively supported by this crate.
-    BuiltInFunction,
-    /// A function that has been defined either buy users of this crate or created at runtime.
-    UserFunction,
 }
